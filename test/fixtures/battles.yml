@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  year: 2016-09-03 17:55:33
+  battle_number: 1
+  attacker_king: MyString
+  defender_king: MyString
+  attacker_1: MyString
+  defender_1: MyString
+  battle_outcome: MyString
+  battle_type: MyString
+  major_deaths: 1
+  major_capture: 1
+  attacker_size: 1
+  defender_size: 1
+  attacker_commander: MyString
+  defender_commander: MyString
+  summer: false
+  location: MyString
+  region: MyString
+  note: MyText
+
+two:
+  name: MyString
+  year: 2016-09-03 17:55:33
+  battle_number: 1
+  attacker_king: MyString
+  defender_king: MyString
+  attacker_1: MyString
+  defender_1: MyString
+  battle_outcome: MyString
+  battle_type: MyString
+  major_deaths: 1
+  major_capture: 1
+  attacker_size: 1
+  defender_size: 1
+  attacker_commander: MyString
+  defender_commander: MyString
+  summer: false
+  location: MyString
+  region: MyString
+  note: MyText

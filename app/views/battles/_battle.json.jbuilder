@@ -1,0 +1,2 @@
+json.extract! battle, :id, :name, :year, :battle_number, :attacker_king, :defender_king, :attacker_1, :defender_1, :battle_outcome, :battle_type, :major_deaths, :major_capture, :attacker_size, :defender_size, :attacker_commander, :defender_commander, :summer, :location, :region, :note, :created_at, :updated_at
+json.url battle_url(battle, format: :json)

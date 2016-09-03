@@ -1,0 +1,101 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @battle.name %>
+  </p>
+
+  <p>
+    <strong>Year:</strong>
+    <%= @battle.year %>
+  </p>
+
+  <p>
+    <strong>Battle number:</strong>
+    <%= @battle.battle_number %>
+  </p>
+
+  <p>
+    <strong>Attacker king:</strong>
+    <%= @battle.attacker_king %>
+  </p>
+
+  <p>
+    <strong>Defender king:</strong>
+    <%= @battle.defender_king %>
+  </p>
+
+  <p>
+    <strong>Attacker 1:</strong>
+    <%= @battle.attacker_1 %>
+  </p>
+
+  <p>
+    <strong>Defender 1:</strong>
+    <%= @battle.defender_1 %>
+  </p>
+
+  <p>
+    <strong>Battle outcome:</strong>
+    <%= @battle.battle_outcome %>
+  </p>
+
+  <p>
+    <strong>Battle type:</strong>
+    <%= @battle.battle_type %>
+  </p>
+
+  <p>
+    <strong>Major deaths:</strong>
+    <%= @battle.major_deaths %>
+  </p>
+
+  <p>
+    <strong>Major capture:</strong>
+    <%= @battle.major_capture %>
+  </p>
+
+  <p>
+    <strong>Attacker size:</strong>
+    <%= @battle.attacker_size %>
+  </p>
+
+  <p>
+    <strong>Defender size:</strong>
+    <%= @battle.defender_size %>
+  </p>
+
+  <p>
+    <strong>Attacker commander:</strong>
+    <%= @battle.attacker_commander %>
+  </p>
+
+  <p>
+    <strong>Defender commander:</strong>
+    <%= @battle.defender_commander %>
+  </p>
+
+  <p>
+    <strong>Summer:</strong>
+    <%= @battle.summer %>
+  </p>
+
+  <p>
+    <strong>Location:</strong>
+    <%= @battle.location %>
+  </p>
+
+  <p>
+    <strong>Region:</strong>
+    <%= @battle.region %>
+  </p>
+
+  <p>
+    <strong>Note:</strong>
+    <%= @battle.note %>
+  </p>
+
+  <%= link_to 'Edit', edit_battle_path(@battle) %> |
+  <%= link_to 'Back', battles_path %>
+</div>

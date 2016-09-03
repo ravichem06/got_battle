@@ -1,0 +1,114 @@
+
+
+<%= form_for(battle) do |f| %>
+  <% if battle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+
+      <ul>
+      <% battle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+
+  <div class="field">
+    <%= f.label :battle_number %>
+    <%= f.number_field :battle_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attacker_king %>
+    <%= f.text_field :attacker_king %>
+  </div>
+
+  <div class="field">
+    <%= f.label :defender_king %>
+    <%= f.text_field :defender_king %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attacker_1 %>
+    <%= f.text_field :attacker_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :defender_1 %>
+    <%= f.text_field :defender_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :battle_outcome %>
+    <%= f.text_field :battle_outcome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :battle_type %>
+    <%= f.text_field :battle_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :major_deaths %>
+    <%= f.number_field :major_deaths %>
+  </div>
+
+  <div class="field">
+    <%= f.label :major_capture %>
+    <%= f.number_field :major_capture %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attacker_size %>
+    <%= f.number_field :attacker_size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :defender_size %>
+    <%= f.number_field :defender_size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attacker_commander %>
+    <%= f.text_field :attacker_commander %>
+  </div>
+
+  <div class="field">
+    <%= f.label :defender_commander %>
+    <%= f.text_field :defender_commander %>
+  </div>
+
+  <div class="field">
+    <%= f.label :summer %>
+    <%= f.check_box :summer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :region %>
+    <%= f.text_field :region %>
+  </div>
+
+  <div class="field">
+    <%= f.label :note %>
+    <%= f.text_area :note %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

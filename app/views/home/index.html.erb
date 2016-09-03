@@ -1,0 +1,20 @@
+<div class="container">
+
+	
+
+
+ <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix" style = "left: -26px; bottom: 25px;" >search</i>
+          <%= form_tag do %>
+	  		<%= text_field_tag "search", nil, placeholder: "Search for your favourite Game of Thrones Battles", autocomplete: :off, :class=>"autocomplete", :id => "autocomplete-input" %>
+	  		
+		  <% end %>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
