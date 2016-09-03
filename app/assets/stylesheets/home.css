@@ -1,3 +1,12 @@
+.body {
+  
+  background: url(../assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .container {
 	width: 500px;
     margin: 0 auto;
@@ -5,11 +14,19 @@
     margin-left: 506px;
     /* text-align: center; */
     margin-top: 214px;
+    
 }
 
 #autocomplete-input{
 	width: 578px;
 	padding: 10px;
+  opacity: 0.8;
+  background: #fff;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#autocomplete-input:hover {
+
 }
 
 li.soulmate-suggestion{

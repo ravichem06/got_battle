@@ -7,6 +7,15 @@ class BattlesController < ApplicationController
     @battles = Battle.all
   end
 
+  # GET /search
+  def search
+    @battles = Battle.search(params[:search])
+    respond_to do |format|
+      format.html
+      format.json
+    end
+  end
+
   # GET /battles/1
   # GET /battles/1.json
   def show

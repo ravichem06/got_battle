@@ -6,9 +6,11 @@ Rails.application.routes.draw do
 
 	root 'home#index'
 
-	get 'battles/list'
+	get '/list' => 'battles#list', as: :list
 
-	get 'battles/count'
+	get '/count' => 'battles#count', as: :count
+
+	get '/search' => 'battles#search', :as => :search
 
   	resources :battles
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

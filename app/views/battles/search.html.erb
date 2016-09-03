@@ -1,0 +1,7 @@
+<div class="">
+  <% if @battles.present? %>
+    <%= render 'battles' %>
+  <% else %>
+    <p>There are no battles containing the term(s) <%= params[:search] %>.</p>
+  <% end %>
+</div>

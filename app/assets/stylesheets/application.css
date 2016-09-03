@@ -14,3 +14,4 @@
  *= require soulmate
  *= require_self
  */
+.hidden { display: none; }
