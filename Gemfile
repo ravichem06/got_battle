@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#gem 'rack-contrib'
+#
 gem 'soulmate', :require => 'soulmate/server'
 gem 'redis'
 gem 'devise'
@@ -51,7 +51,7 @@ group :development do
 end
 
 group :production do
-
+	gem 'rack-contrib'
   gem 'rails_12factor', '0.0.2'
 end
 
