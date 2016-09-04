@@ -7,6 +7,8 @@ class Battle < ApplicationRecord
 		  
 	end
 
+	
+
 	private 
 
 

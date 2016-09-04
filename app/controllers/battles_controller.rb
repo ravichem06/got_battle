@@ -16,6 +16,33 @@ class BattlesController < ApplicationController
     end
   end
 
+  # GET /stats
+  # GET /stats.json
+  def stats
+
+    @most_active_attk = Battle.group(:attacker_king).order('count_id DESC').count(:id).keys
+    @most_active_defk = Battle.group(:defender_king).order('count_id DESC').count(:id).keys
+    @most_active_region = Battle.group(:region).order('count_id DESC').count(:id).keys
+    @most_active_name = Battle.group(:name).order('count_id DESC').count(:id).keys
+    @battle_type = Battle.group(:battle_type).order('count_id DESC').count(:id)
+    @max_def_size = Battle.group(:defender_size).order('defender_size DESC').count(:defender_size).keys
+    @min_def_size = Battle.group(:defender_size).order('defender_size ASC').count(:defender_size).keys
+    @battles = Battle.all
+    @i = 0
+    @sum = 0
+    @min_def_size.each do |n|
+      if n == nil
+        @sum += 0
+        @i += 0 
+      else
+        @sum += n 
+        @i += 1
+      end 
+
+  end 
+
+  end
+
   # GET /battles/1
   # GET /battles/1.json
   def show

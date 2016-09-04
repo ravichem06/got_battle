@@ -1,0 +1,19 @@
+{  
+   "most_active":{  
+      "attacker_king":"<%= @most_active_attk[0] %>",
+      "defender_king":"<%= @most_active_defk[0] %>",
+      "region":"<%= @most_active_region[0] %>",
+      "name":"<%= @most_active_name[0] %>"
+   },
+   
+   "battle_type":[<% @battle_type.each do |key, value| %>
+                  "<%= key %>",
+                    <% end %>],
+   "defender_size":{  
+      "average":"<%= @sum/@i %>",
+      "min":"<%= @min_def_size[1] %>",
+      "max":"<%= @max_def_size[0] %>"
+   }
+}
+
+
