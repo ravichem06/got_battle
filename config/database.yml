@@ -52,7 +52,7 @@ production:
   adapter: mysql2
   encoding: utf8
   pool: 5
-  database: got_battles
+  database: zmkun74qjmnitnno
   username: <%= ENV['USERNAME'] %>
   password: <%= ENV['GOT_BATTLES_DATABASE_PASSWORD'] %>
   host: <%= ENV['DATABASE_HOST'] %>
