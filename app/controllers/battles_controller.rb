@@ -1,5 +1,6 @@
 class BattlesController < ApplicationController
   before_action :set_battle, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:list, :count, :stats]
   layout 'battles'
   # GET /battles
   # GET /battles.json
@@ -57,13 +58,13 @@ class BattlesController < ApplicationController
   def edit
   end
 
-  # GET /list
+  
   # GET /list.json
   def list
     @battles = Battle.all
 
     respond_to do |format|
-      format.html
+      
       format.json
     end
   end

@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   
 
-	mount Soulmate::Server, :at => "/autocomplete"
+  devise_for :users
+	#mount Soulmate::Server, :at => "/autocomplete"
 
 	root 'home#index'
 
@@ -13,7 +14,7 @@ Rails.application.routes.draw do
 	get '/search' => 'battles#search', :as => :search
 
 	get '/stats' => 'battles#stats', as: :stats
-	
+
 
   	resources :battles
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
