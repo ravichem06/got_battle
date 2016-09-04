@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: got_battles_production
-  username: got_battles
+  url: <%= ENV['JAWSDB_URL'] %>
+  database: got_battles
+  username: <%= ENV['USERNAME'] %>
   password: <%= ENV['GOT_BATTLES_DATABASE_PASSWORD'] %>
