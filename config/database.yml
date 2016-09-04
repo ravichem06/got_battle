@@ -49,7 +49,8 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['JAWSDB_URL'] %>
+  adapter: mysql2
+  
   database: got_battles
   username: <%= ENV['USERNAME'] %>
   password: <%= ENV['GOT_BATTLES_DATABASE_PASSWORD'] %>
