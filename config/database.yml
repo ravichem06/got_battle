@@ -55,4 +55,4 @@ production:
   database: got_battles
   username: <%= ENV['USERNAME'] %>
   password: <%= ENV['GOT_BATTLES_DATABASE_PASSWORD'] %>
-  host: <%= ENV['DATABASE_HOST']
+  host: <%= ENV['DATABASE_HOST'] %>
